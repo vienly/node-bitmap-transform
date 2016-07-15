@@ -4,7 +4,7 @@ const mocha = require('gulp-mocha');
 
 var scripts = ['./index.js', './lib/*.js', './test/*.js'];
 var binFiles = ['./bin/*'];
-var testFiles = ['lab-vien/test/**/*.js'];
+var testFiles = ['./test/*.js'];
 
 gulp.task('lint', () => {
   return gulp.src(scripts)
