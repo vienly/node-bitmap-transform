@@ -11,11 +11,11 @@ fs.readFile('./palette-bitmap.bmp', function (err, data) {
   console.log('Common Header: ');
   console.log(commonHeader);
 
-  var bitmapHeader = data.slice(14, 67);
+  var bitmapHeader = data.slice(14, 53);
   console.log('Bitmap Header: ');
   console.log(bitmapHeader);
 
-  var pallete = data.slice(68, 1077);
+  var pallete = data.slice(54, 1077);
   console.log('Palette: ');
   console.log(pallete);
 
