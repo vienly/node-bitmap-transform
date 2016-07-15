@@ -1,2 +1,2 @@
-# Simple Bitmap Transforms with Node
+# ![CF](assets/siegward.gif) Simple Bitmap Transforms with Node
 :)
