@@ -3,9 +3,14 @@
 'use strict';
 
 const fs = require('fs');
-const transformer = require('../lib/bitmapTransformer.js');
+const transformer = require('../lib/bitmapTransformerCliOptions.js');
+var file = process.argv.slice(2);
+var outputLocation = process.argv.slice(3);
+var transformType = process.argv.slice(4);
 
-fs.readFile('./test/resources/palette-bitmap.bmp', function(err, data) {
+fs.readFile(file[0], function(err, data) {
   if(err) throw err;
-  transformer(data);
+  console.log(file[0]);
+  console.log(data);
+  transformer(data, outputLocation[0], transformType[0]);
 });
