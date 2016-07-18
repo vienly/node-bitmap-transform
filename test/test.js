@@ -3,7 +3,6 @@ const expect = require('chai').expect;
 const fs = require('fs');
 
 const headerReader = require('../lib/headerReader.js');
-// const bitmapTransformer = require('../lib/bitmapTransformer.js');
 
 
 describe('header reader', function(){
@@ -66,11 +65,5 @@ describe('bitmap transform "grayscale"', function(){
     console.log(transformedResult);
     expect(testResult).to.eql(transformedResult);
     expect(testResult2).to.eql(transformedResult2);
-  });
-});
-
-describe('bitmap transform', function(){
-  it('should transform the image by changing the value of specified bytes corresponding to pixels', function(){
-    expect(true).to.eql(true);
   });
 });
