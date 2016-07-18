@@ -4,14 +4,11 @@
 
 const fs = require('fs');
 const transformer = require('../lib/bitmapTransformer.js');
-var file = process.argv.slice(2);
-var outputLocation = process.argv.slice(3);
-var transformType = process.argv.slice(4);
+var file = process.argv[2];
+var outputLocation = process.argv[3];
+var transformType = process.argv[4];
 
-fs.readFile(file[0], function(err, data) {
+fs.readFile(file, function(err, data) {
   if(err) throw err;
-  console.log(file[0]);
-  console.log(data);
-  console.log(transformType);
-  transformer(data, outputLocation[0], transformType[0]);
+  transformer(data, outputLocation, transformType);
 });
