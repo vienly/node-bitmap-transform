@@ -20,7 +20,7 @@ Compares the initial data against the intended transformation to confirm that th
 
 Run the command `gulp` to watch all files, then lint the files, and run all tests.
 
-### Bonus Objectives
+## Bonus Objectives
 
 Can handle palette and non-palette bitmaps
 
