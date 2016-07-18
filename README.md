@@ -13,7 +13,7 @@ Run the file with node and pass in three parameters in order:
   - the type of transform you want to perform, options are:
     - invert
     - grayscale
-  i.e. ```node bin/bitmapTransform test/resources/pika.bmp test/output/pikaGray.bmp grayscale```
+  i.e. ```bin/bitmapTransform test/resources/pika.bmp test/output/pikaGray.bmp grayscale```
 
 ## Tests
 Compares the initial data against the intended transformation to confirm that the binary data has been changed correctly.
